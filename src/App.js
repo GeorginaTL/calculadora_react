@@ -3,10 +3,11 @@ import freeCodeCamoLogo from './imagenes/freecodecamp-logo.png';
 import Boton from './Componentes/Boton';
 import Pantalla from './Componentes/Pantalla';
 import BotonClear from './Componentes/BotonClear';
-
+import { useState } from 'react';
 
 
 function App() {
+  const [input,setInput]=useState('Hola Fatito');
   return (
     <div className="App">
       <div className='freecodecamp-logo-contenedor'>
@@ -16,7 +17,7 @@ function App() {
           src={freeCodeCamoLogo}/>
       </div>
       <div className='contenedor-calculadora'>
-        <Pantalla />
+        <Pantalla input={input}/>
         <div className='fila'>
           <Boton>1</Boton>
           <Boton>2</Boton>

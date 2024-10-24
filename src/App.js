@@ -1,5 +1,8 @@
 import './App.css';
 import freeCodeCamoLogo from './imagenes/freecodecamp-logo.png';
+import Boton from './Componentes/Boton'
+
+
 
 function App() {
   return (
@@ -11,6 +14,13 @@ function App() {
           src={freeCodeCamoLogo}/>
       </div>
       <div className='contenedor-calculadora'>
+        <div className='fila'>
+          <Boton>1</Boton>
+        </div>
+        <div className='fila'></div>
+        <div className='fila'></div>
+        <div className='fila'></div>
+        <div className='fila'></div>
       </div>
     </div>
   );
